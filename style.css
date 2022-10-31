@@ -53,6 +53,8 @@ form {
 }
 
 #output {
+  background-color: coral;
+  text-align: center;
   max-width: 80%;
   margin: 50px auto;
   font-size: 1.1em;
