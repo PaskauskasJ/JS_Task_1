@@ -12,9 +12,13 @@ Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 const FORM = document.querySelector("form");
 const INPUT = document.getElementById("search");
 const OUTPUT = document.getElementById("output");
+let lbValue = "";
+let gValue = "";
+let ozValue = "";
 
 function convertFunction(event) {
   event.preventDefault();
+  OUTPUT.innerHTML = "";
   let value = INPUT.value;
   let lbValue = document.createElement("div");
   lbValue.textContent = value + " Kilograms equals " + value * 2.2046 + " lb";
